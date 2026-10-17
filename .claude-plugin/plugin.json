@@ -1,0 +1,14 @@
+{
+  "name": "seo-records-website-checkup",
+  "displayName": "Website Check-up by SEO Records",
+  "version": "1.0.0",
+  "description": "A complete website check-up in one conversation: SEO, page corrections, readiness for AI assistants and security basics, turned into a prioritized action plan. Uses the SEO Records and AI Website Security connectors.",
+  "author": {
+    "name": "EUROPE TECHNOLOGIE",
+    "email": "contact@seorecords.com",
+    "url": "https://seorecords.com/en"
+  },
+  "homepage": "https://seorecords.com/en/assistants",
+  "license": "MIT",
+  "keywords": ["seo", "website audit", "geo", "llms.txt", "robots.txt", "security headers", "https certificate"]
+}

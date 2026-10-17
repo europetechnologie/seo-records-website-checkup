@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "seo-records": { "type": "http", "url": "https://api.seorecords.com/mcp" },
+    "seo-records-corrector": { "type": "http", "url": "https://api.seorecords.com/mcp/corrector" },
+    "geo-seo-records": { "type": "http", "url": "https://api.seorecords.com/mcp/geo" },
+    "ai-website-security": { "type": "http", "url": "https://scan.aiwebsitesecurity.com/api/mcp" }
+  }
+}
