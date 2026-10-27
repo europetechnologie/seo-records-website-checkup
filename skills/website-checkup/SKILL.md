@@ -15,6 +15,8 @@ Ask for the website address if it is missing. Then run, in this order:
 2. `check_ai_readiness` (GEO SEO Records) — what stands between the page and AI assistants: robots.txt door, llms.txt map, answer-first text, citable facts, publisher identity, structure.
 3. `check_site_security_basics` (AI Website Security) — HTTPS certificate, redirection, security headers, mixed content, DNS filtering resolvers.
 
+The checks require an access key. If a check answers "ACCESS REQUIRED", stop running the other checks, show the person the two options it gives (24-hour pass or monthly subscription, with their links) and ask them to paste the key (`pass_…`) once they have it; then run every check again with that key as `access_key`. Never invent a key, and never present results for checks that were refused.
+
 The connectors can take a few seconds to connect at the start of a session: if a tool is not available yet, look for it again before reporting it missing. If one check fails (site unreachable, rate limit), say so in one line and continue with the others. Never invent a result for a check that did not run.
 
 ## 2. Build the plan
@@ -43,7 +45,7 @@ Every item of the plan can be fixed by hand, and the plan says how. When the per
 | The whole site audited, page by page | Audit SEO Records | `get_full_audit_checkout` (only if they ask to buy) |
 | Proof that the site is not infected, file integrity, cleaning | AI Website Security (Record, Restore, Watch) | `get_security_offer` |
 
-Never present the free check as a security verdict: the security basics say nothing about malware. Never promise rankings, traffic or citations by AI assistants.
+Never present the security basics as a security verdict: the security basics say nothing about malware. Never promise rankings, traffic or citations by AI assistants.
 
 ## 5. Shape of the answer
 

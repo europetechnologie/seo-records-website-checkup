@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "seo-records": { "type": "http", "url": "https://api.seorecords.com/mcp" },
-    "seo-records-corrector": { "type": "http", "url": "https://api.seorecords.com/mcp/corrector" },
-    "geo-seo-records": { "type": "http", "url": "https://api.seorecords.com/mcp/geo" },
-    "ai-website-security": { "type": "http", "url": "https://scan.aiwebsitesecurity.com/api/mcp" }
+    "seo-records": { "type": "http", "url": "https://api.seorecords.com/mcp", "headers": { "x-access-key": "${SEO_RECORDS_ACCESS_KEY:-}" } },
+    "seo-records-corrector": { "type": "http", "url": "https://api.seorecords.com/mcp/corrector", "headers": { "x-access-key": "${SEO_RECORDS_ACCESS_KEY:-}" } },
+    "geo-seo-records": { "type": "http", "url": "https://api.seorecords.com/mcp/geo", "headers": { "x-access-key": "${SEO_RECORDS_ACCESS_KEY:-}" } },
+    "ai-website-security": { "type": "http", "url": "https://scan.aiwebsitesecurity.com/api/mcp", "headers": { "x-access-key": "${SEO_RECORDS_ACCESS_KEY:-}" } }
   }
 }

@@ -18,7 +18,14 @@ A complete check-up of a public website in one conversation: how search engines 
 | GEO SEO Records | `https://api.seorecords.com/mcp/geo` | Readiness for AI assistants, corrected robots.txt, draft llms.txt |
 | AI Website Security | `https://scan.aiwebsitesecurity.com/api/mcp` | HTTPS certificate, redirection, security headers, mixed content, DNS filtering |
 
-No account or API key is needed. The checks are free; some tools return the offers and payment links of paid products (Audit SEO Records, the SEO Records module, SEO Outpost, SEO Autopilot, GEO SEO Records, Effect SEO Records, AI Website Security). Nothing is bought without the person paying on the Stripe or storefront page themselves.
+## Access pass
+
+The checks require an access key. One key opens the four servers: **€9.90 for 24 hours** (one-time payment) or **€29 per month** (cancel anytime), bought at [seorecords.com/en/assistants#pass](https://seorecords.com/en/assistants#pass). After payment the key (`pass_…`) is shown on screen.
+
+- Paste it in the conversation: Claude passes it to the tools.
+- Or set it once, before starting Claude Code: `SEO_RECORDS_ACCESS_KEY=pass_…` — the plugin sends it to the four servers as the `x-access-key` header.
+
+Without a key, a check answers with the two ways to buy one. The tools that return offers, payment links or a purchased audit report work without a key. Nothing is bought without the person paying on the Stripe or storefront page themselves.
 
 ## What is sent, and where
 
