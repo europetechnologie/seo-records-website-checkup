@@ -1,7 +1,7 @@
 {
   "name": "seo-records-website-checkup",
   "displayName": "Website Check-up by SEO Records",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A complete website check-up in one conversation: SEO, page corrections, readiness for AI assistants and security basics, turned into a prioritized action plan. Uses the SEO Records and AI Website Security connectors.",
   "author": {
     "name": "EUROPE TECHNOLOGIE",
@@ -23,5 +23,35 @@
   "documentationUrl": "https://seorecords.com/en/assistants",
   "supportUrl": "https://seorecords.com/en/contact",
   "privacyPolicyUrl": "https://seorecords.com/en/assistants#donnees",
-  "icon": ".claude-plugin/icon.png"
+  "icon": ".claude-plugin/icon.png",
+  "userConfig": {
+    "seo_records_access_key": {
+      "type": "string",
+      "title": "SEO Records access key",
+      "description": "Optional. Your pass key (pass_…) for the SEO Records connector, from https://seorecords.com/en/assistants#pass. Leave empty: the connector then shows the pass price and link when a paid tool is called.",
+      "sensitive": true,
+      "required": false
+    },
+    "seo_records_corrector_access_key": {
+      "type": "string",
+      "title": "SEO Records Corrector access key",
+      "description": "Optional. Your pass key (pass_…) for the SEO Records Corrector connector, from https://seorecords.com/en/assistants#pass. Leave empty: the connector then shows the pass price and link when a paid tool is called.",
+      "sensitive": true,
+      "required": false
+    },
+    "geo_seo_records_access_key": {
+      "type": "string",
+      "title": "GEO SEO Records access key",
+      "description": "Optional. Your pass key (pass_…) for the GEO SEO Records connector, from https://seorecords.com/en/assistants#pass. Leave empty: the connector then shows the pass price and link when a paid tool is called.",
+      "sensitive": true,
+      "required": false
+    },
+    "ai_website_security_access_key": {
+      "type": "string",
+      "title": "AI Website Security access key",
+      "description": "Optional. Your pass key (pass_…) for the AI Website Security connector, from https://seorecords.com/en/assistants#pass. Leave empty: the connector then shows the pass price and link when a paid tool is called.",
+      "sensitive": true,
+      "required": false
+    }
+  }
 }

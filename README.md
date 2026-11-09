@@ -23,14 +23,7 @@ A complete check-up of a public website in one conversation: how search engines 
 The checks require an access key, and **each server has its own**: **€9.90 for 24 hours** (one-time payment) or **€29 per month** (cancel anytime), per server, bought at [seorecords.com/en/assistants#pass](https://seorecords.com/en/assistants#pass). After payment the key (`pass_…`) is shown on screen.
 
 - Paste it in the conversation: Claude passes it to the tools of that server.
-- Or set it once, before starting Claude Code — the plugin sends each one to its server as the `x-access-key` header:
-
-| Server | Variable |
-|---|---|
-| SEO Records | `SEO_RECORDS_ACCESS_KEY` |
-| SEO Records Corrector | `SEO_RECORDS_CORRECTOR_ACCESS_KEY` |
-| GEO SEO Records | `GEO_SEO_RECORDS_ACCESS_KEY` |
-| AI Website Security | `AI_WEBSITE_SECURITY_ACCESS_KEY` |
+- Or enter it once in the plugin's configuration: when the plugin is enabled, Claude Code asks for one optional key per server (**SEO Records**, **SEO Records Corrector**, **GEO SEO Records**, **AI Website Security** access key). The field is masked, the key is kept in your system's secure credential store, and the plugin sends it to that server only, as the `x-access-key` header. Leave a field empty if you have no pass for that server.
 
 Without its key, a check answers with the two ways to buy the pass of that server. The tools that return offers, payment links or a purchased audit report work without a key. Nothing is bought without the person paying on the Stripe or storefront page themselves.
 
